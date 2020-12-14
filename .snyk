@@ -1,11 +1,76 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.19.0
-ignore: {}
+version: v1.14.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-JS-AXIOS-1038255:
+    - gatsby > axios:
+        reason: No path or update currently available.
+        expires: '2021-01-13T16:47:52.530Z'
+  SNYK-JS-DECOMPRESSTAR-559095:
+    - gatsby-plugin-sharp > imagemin-pngquant > pngquant-bin > bin-wrapper > download > decompress > decompress-tar:
+        reason: None given
+        expires: '2021-01-13T16:47:52.530Z'
+    - gatsby-plugin-sharp > imagemin-mozjpeg > mozjpeg > bin-build > download > decompress > decompress-tarbz2 > decompress-tar:
+        reason: None given
+        expires: '2021-01-13T16:47:52.531Z'
+    - gatsby-plugin-sharp > imagemin-pngquant > pngquant-bin > bin-build > download > decompress > decompress-tarbz2 > decompress-tar:
+        reason: None given
+        expires: '2021-01-13T16:47:52.531Z'
+    - gatsby-plugin-sharp > imagemin-mozjpeg > mozjpeg > bin-wrapper > download > decompress > decompress-tarbz2 > decompress-tar:
+        reason: None given
+        expires: '2021-01-13T16:47:52.531Z'
+    - gatsby-plugin-sharp > imagemin-pngquant > pngquant-bin > bin-wrapper > download > decompress > decompress-tarbz2 > decompress-tar:
+        reason: None given
+        expires: '2021-01-13T16:47:52.531Z'
+    - gatsby-plugin-sharp > imagemin-mozjpeg > mozjpeg > bin-build > download > decompress > decompress-targz > decompress-tar:
+        reason: None given
+        expires: '2021-01-13T16:47:52.531Z'
+    - gatsby-plugin-sharp > imagemin-pngquant > pngquant-bin > bin-build > download > decompress > decompress-targz > decompress-tar:
+        reason: None given
+        expires: '2021-01-13T16:47:52.531Z'
+    - gatsby-plugin-sharp > imagemin-mozjpeg > mozjpeg > bin-wrapper > download > decompress > decompress-targz > decompress-tar:
+        reason: None given
+        expires: '2021-01-13T16:47:52.532Z'
+    - gatsby-plugin-sharp > imagemin-pngquant > pngquant-bin > bin-wrapper > download > decompress > decompress-targz > decompress-tar:
+        reason: None given
+        expires: '2021-01-13T16:47:52.532Z'
+  SNYK-JS-HIGHLIGHTJS-1045326:
+    - gatsby > gatsby-cli > gatsby-recipes > hicat > highlight.js:
+        reason: None given
+        expires: '2021-01-13T16:47:52.534Z'
+  SNYK-JS-LODASH-590103:
+    - gatsby-plugin-offline > cheerio > lodash:
+        reason: None given
+        expires: '2021-01-13T16:47:52.534Z'
+  SNYK-JS-LODASH-608086:
+    - gatsby-plugin-offline > cheerio > lodash:
+        reason: None given
+        expires: '2021-01-13T16:47:52.534Z'
+  SNYK-JS-NODESASS-541000:
+    - node-sass:
+        reason: None given
+        expires: '2021-01-13T16:47:52.534Z'
+  SNYK-JS-NODESASS-541002:
+    - node-sass:
+        reason: None given
+        expires: '2021-01-13T16:47:52.534Z'
+  SNYK-JS-TRIM-1017038:
+    - gatsby > gatsby-cli > gatsby-recipes > remark-parse > trim:
+        reason: None given
+        expires: '2021-01-13T16:47:52.534Z'
+    - gatsby > gatsby-cli > gatsby-recipes > @mdx-js/mdx > remark-parse > trim:
+        reason: None given
+        expires: '2021-01-13T16:47:52.535Z'
+    - gatsby > gatsby-cli > gatsby-recipes > @mdx-js/runtime > @mdx-js/mdx > remark-parse > trim:
+        reason: None given
+        expires: '2021-01-13T16:47:52.535Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   SNYK-JS-LODASH-567746:
     - gatsby > lodash:
         patched: '2020-05-01T05:06:38.805Z'
+      gatsby-plugin-offline > cheerio > lodash:
+        patched: '2020-12-14T16:45:06.571Z'
     - gatsby-plugin-offline > lodash:
         patched: '2020-05-01T05:06:38.805Z'
     - gatsby-plugin-sharp > lodash:
